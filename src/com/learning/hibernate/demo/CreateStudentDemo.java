@@ -1,5 +1,8 @@
 package com.learning.hibernate.demo;
 
+import java.text.ParseException;
+import java.util.Date;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -9,7 +12,7 @@ import com.learning.hibernate.demo.entity.Student;
 
 public class CreateStudentDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		
 		// create session factory
 		SessionFactory factory = new Configuration()
@@ -23,7 +26,9 @@ public class CreateStudentDemo {
 		// use the session object to do something
 		try {
 			System.out.println("Creating new student object...");
-		    Student tempStudent = new Student("Paul", "Wall", "pwall@anemail.com");
+			
+			Date dob = DateUtils.parseDate("31/12/1993");
+		    Student tempStudent = new Student("Paul", "Wall", "pwall@anemail.com", dob);
 		    
 		    session.beginTransaction();             // begin transaction
 		    session.save(tempStudent);              // save the student
