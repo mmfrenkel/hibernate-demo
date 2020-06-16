@@ -1,0 +1,6 @@
+lib/
+.classpath
+.settings
+.project
+*.class
+
