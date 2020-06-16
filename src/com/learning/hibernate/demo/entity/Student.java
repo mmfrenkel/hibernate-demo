@@ -14,25 +14,25 @@ import javax.persistence.TemporalType;
 @Entity
 @Table(name="student")  // map to correct db table
 public class Student {
-	
+
 	@Id 
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")  // map to appropriate database columns
 	private int id;
-	
+
 	@Column(name="first_name")
 	private String firstName;
-	
+
 	@Column(name="last_name")
 	private String lastName;
-	
+
 	@Column(name="email")
 	private String email;
 
 	@Column(name="date_of_birth")
 	@Temporal(TemporalType.DATE)
 	private Date dateOfBirth;
-	
+
 	public Student() {
 		// no argument constructor
 	}
@@ -75,8 +75,8 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-    public Date getDateOfBirth() {
+
+	public Date getDateOfBirth() {
 		return dateOfBirth;
 	}
 
