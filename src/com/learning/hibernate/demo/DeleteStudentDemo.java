@@ -13,9 +13,9 @@ public class DeleteStudentDemo {
 		
 		// create session factory
 		SessionFactory factory = new Configuration()
-								.configure("hibernate.cfg.xml")
-								.addAnnotatedClass(Student.class)
-								.buildSessionFactory();
+				.configure("hibernate.cfg.xml")
+				.addAnnotatedClass(Student.class)
+				.buildSessionFactory();
 		
 		
 		// use the session object to do something
@@ -23,7 +23,7 @@ public class DeleteStudentDemo {
 		    int studentId = 1;
 		    
 			// create session
-			Session session = factory.getCurrentSession();
+		    Session session = factory.getCurrentSession();
 		    session.beginTransaction();             // begin transaction 
 		    
 		    // retrieve student based on the id: primary key

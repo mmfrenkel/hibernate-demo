@@ -30,8 +30,8 @@ public class Student {
 	private String email;
 
 	@Column(name="date_of_birth")
-    @Temporal(TemporalType.DATE)    
-    private Date dateOfBirth;
+	@Temporal(TemporalType.DATE)
+	private Date dateOfBirth;
 	
 	public Student() {
 		// no argument constructor
