@@ -8,6 +8,7 @@ import org.hibernate.cfg.Configuration;
 
 import com.learning.hibernate.demo.entity.Student;
 
+
 public class PrimaryKeyDemo {
 
 	public static void main(String[] args) throws ParseException {

@@ -1,8 +1,8 @@
-DROP SCHEMA IF EXISTS `hb-01-one-to-one-uni`;
+DROP SCHEMA IF EXISTS `hibernate-tutorial`;
 
-CREATE SCHEMA `hb-01-one-to-one-uni`;
+CREATE SCHEMA `hibernate-tutorial`;
 
-use `hb-01-one-to-one-uni`;
+use `hibernate-tutorial`;
 
 SET FOREIGN_KEY_CHECKS = 0;
 

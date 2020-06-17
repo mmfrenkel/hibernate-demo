@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `hb_student_tracker`;
-USE `hb_student_tracker`;
+CREATE DATABASE  IF NOT EXISTS `hibernate-tutorial`;
+USE `hibernate-tutorial`;
 
 --
 -- Table structure for table `student`
