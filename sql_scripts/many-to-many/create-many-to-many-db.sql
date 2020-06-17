@@ -1,8 +1,8 @@
-DROP SCHEMA IF EXISTS `hb-05-many-to-many`;
+DROP SCHEMA IF EXISTS `hibernate-tutorial`;
 
-CREATE SCHEMA `hb-05-many-to-many`;
+CREATE SCHEMA `hibernate-tutorial`;
 
-use `hb-05-many-to-many`;
+use `hibernate-tutorial`;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
